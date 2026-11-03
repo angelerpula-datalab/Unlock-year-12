@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.74">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;12th Wedding Anniversary: Level Up Together&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #050515;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Press Start 2P', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(10, 10, 30, 0.9);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 4px solid #f1c40f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 20px rgba(0,0,0,0.8);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #f1c40f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px #c0392b;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>p.subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #bdc3c7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#game-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 700px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to bottom, #020024, #090979, #00d4ff);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 4px solid #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>canvas {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #0b0b2b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#ui-overlay {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 1px 1px #000;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hud-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.7);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#control-panel {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #11112b;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 3px solid #f1c40f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 760px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Press Start 2P', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #27ae60;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px #1e8449;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.1s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button:active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(4px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 #1e8449;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2ecc71;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#instructions {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 7px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #f1c40f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#quote-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 760px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #000000;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 3px solid #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 7px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ecf0f1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;12TH WEDDING ANNIVERSARY: LEVEL UP!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="subtitle"&gt;The Ultimate Co-Op Endurance Climb&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="game-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="ui-overlay"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hud-box" id="hud-score"&gt;SCORE: 12 YRS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hud-box" id="hud-stamina"&gt;CLIMB STAMINA: 100%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hud-box" id="hud-coins"&gt;🪙 100 COINS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;canvas id="gameCanvas" width="800" height="700"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="control-panel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="instructions"&gt;MASH THE BUTTON TO CLIMB! Watch out for sudden heavy life slips!&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="climbBtn" onclick="playerClimb()"&gt;🧗‍♂️ CLIMB TOGETHER (CLICK!)&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="quote-box" id="finalQuote"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>"If I had to do this over, I’d choose you to suffer life with in a jiffy. I could break apart only because you were holding it together for both of us."</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const canvas = document.getElementById("gameCanvas");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const ctx = canvas.getContext("2d");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Game State Variables</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let climbProgress = 0; // 0 to 100%</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let staminaUsed = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let totalClicks = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let gameWon = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let slipMessage = "";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let slipTimer = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Milestones along the climb (Left &amp; Right alternating)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const milestones = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 5, side: 'left', text: "13 Years Knowing Each Other" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 12, side: 'right', text: "12 Years Married &amp; Ride or Die" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 22, side: 'left', text: "3 Years Long Distance" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 32, side: 'right', text: "Chronic Health Condition" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 42, side: 'left', text: "Fur Baby &amp; Baby in Heaven" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 52, side: 'right', text: "7 Years Waiting for Rainbow" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 62, side: 'left', text: "Almost Took Me Out (ICU &amp; Coma)" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 72, side: 'right', text: "Kids Kicks Cancer's Butt" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 82, side: 'left', text: "WHO Trauma Limit Exceeded" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 92, side: 'right', text: "Dark Humor &amp; Priorities Aligned" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ pos: 100, side: 'top', text: "FINAL APEX: One Hella Ride!" }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function playerClimb() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (gameWon) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>totalClicks++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>staminaUsed += 4;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Random slip-back mechanic to make it harder</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let slipChance = Math.random();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let gain = 3.5;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (slipChance &lt; 0.25 &amp;&amp; climbProgress &gt; 10) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>climbProgress -= 4; // Slip back!</p>
+<p class="p1"><span class="Apple-converted-space">                </span>slipMessage = "⚠️ HEAVY HURDLE! SLIPPED BACK!";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>slipTimer = 30;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>climbProgress += gain;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>slipMessage = "";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (climbProgress &gt;= 100) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>climbProgress = 100;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gameWon = true;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById("climbBtninnerText = "🏆 LEVEL COMPLETED!");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById("climbBtn").style.backgroundColor = "#e67e22";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateHUD();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateHUD() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("hud-stamina").innerText = `STAMINA: ${Math.min(staminaUsed, 9999)} PTS`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("hud-score").innerText = `HEIGHT: ${Math.floor(climbProgress)}%`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function drawGame() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.clearRect(0, 0, canvas.width, canvas.height);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Draw Background Stars / Clouds</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = "#ffffff";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; 40; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let x = (i * 37) % canvas.width;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let y = (i * 59 + Math.floor(climbProgress)) % canvas.height;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillRect(x, y, 2, 2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Draw Parallel Career Line (Lead BI &amp; Principal Architect)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.strokeStyle = "#3498db";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.lineWidth = 4;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.setLineDash([6, 6]);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.beginPath();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.moveTo(220, 650);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.lineTo(220, 80);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.stroke();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.setLineDash([]);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = "#3498db";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.font = "7px 'Press Start 2P'";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillText("BI Engineer &amp; Principal Architect Career Path ➔", 80, 350);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Draw Central Ladder</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let ladderBottomY = 620;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let ladderTopY = 100;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let ladderHeight = ladderBottomY - ladderTopY;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let currentY = ladderBottomY - (climbProgress / 100) * ladderHeight;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = "#7f8c8d";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let y = ladderTopY; y &lt;= ladderBottomY; y += 25) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillRect(380, y, 40, 8); // rungs</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillRect(370, ladderTopY, 6, ladderHeight); // left rail</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillRect(424, ladderTopY, 6, ladderHeight); // right rail</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Draw Milestones clearly on Left and Right</p>
+<p class="p1"><span class="Apple-converted-space">            </span>milestones.forEach(m =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let mY = ladderBottomY - (m.pos / 100) * ladderHeight;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Connector line</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.strokeStyle = "#f1c40f";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.lineWidth = 2;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.beginPath();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (m.side === 'left') {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.moveTo(370, mY);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.lineTo(240, mY);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.stroke();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillStyle = "rgba(0,0,0,0.8)";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillRect(30, mY - 10, 210, 20);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.strokeStyle = "#f1c40f";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.strokeRect(30, mY - 10, 210, 20);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillStyle = "#ffffff";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.font = "6px 'Press Start 2P'";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillText(m.text, 36, mY + 3);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else if (m.side === 'right') {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.moveTo(430, mY);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.lineTo(560, mY);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.stroke();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillStyle = "rgba(0,0,0,0.8)";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillRect(560, mY - 10, 210, 20);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.strokeStyle = "#f1c40f";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.strokeRect(560, mY - 10, 210, 20);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillStyle = "#ffffff";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.font = "6px 'Press Start 2P'";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillText(m.text, 566, mY + 3);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Draw Players climbing together at current progress</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = "#e74c3c"; // Player 1 (Heart)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillRect(388, currentY - 15, 10, 10);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillStyle = "#3498db"; // Player 2 (Shield)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.fillRect(402, currentY - 15, 10, 10);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Slip Alert Popup</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (slipTimer &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>slipTimer--;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = "#e74c3c";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.font = "8px 'Press Start 2P'";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillText(slipMessage, 220, currentY - 35);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Win State Message on Canvas</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (gameWon) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = "rgba(0, 0, 0, 0.85)";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillRect(100, 200, 600, 300);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.strokeStyle = "#f1c40f";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.lineWidth = 4;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.strokeRect(100, 200, 600, 300);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = "#f1c40f";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.font = "10px 'Press Start 2P'";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillText("🏆 12TH ANNIVERSARY REACHED! 🏆", 130, 240);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = "#ffffff";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.font = "7px 'Press Start 2P'";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillText(`Total Clicks / Stamina Expended: ${staminaUsed} pts`, 140, 280);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillText("See how hard it was to climb up and what stamina it took?", 120, 320);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillText("It was that times infinity to do these 12 years,", 135, 350);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = "#f1c40f";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillText("but nobody I would have as Player 2 than him.", 130, 390);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>requestAnimationFrame(drawGame);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Start render loop</p>
+<p class="p1"><span class="Apple-converted-space">        </span>drawGame();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
